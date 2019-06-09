@@ -1,18 +1,18 @@
 # java - GUI
-#### # 01 drawImage(); 사용법
+### # 01 drawImage(); 사용법
 ## 1. drawImage();
 > Class : Object > Graphics
-Abstract Method : drawImage(Image, int, int, ImageObserver)
-Return : boolean
+> Abstract Method : drawImage(Image, int, int, ImageObserver)
+> Return : boolean
 
 ## 2. ImageIcon() {}
 > Class : Object > ImageIcon
-Constructor : ImageIcon(URL)
+> Constructor : ImageIcon(URL)
 
 ## 3. getImage();
 > Class : Object > ImageIcon
-Method : getImage()
-Return : Image
+> Method : getImage()
+> Return : Image
 
 ```Java
 private Image screenImage;
@@ -33,7 +33,7 @@ public void screenDraw(Graphics g) {
 }
 ```
 1. drawImage()는 Image 객체를 매개변수로 받아서 화면에 이미지를 그린다.
-2. URL을 통하여 이미지를 등록할 때에는 ImageIcon 생성자를 이용한다.
+2. URL을 통하여 이미지를 등록할 때에는 ImageIcon 생성자를 이용한다. <br>
 `ImageIcon(Main.class.getResource("../images/introBackground(Title).jpg"))`
-3. ImageIcon을 Image로 변환할 때 getImage()를 사용한다.
+3. ImageIcon을 Image로 변환할 때 getImage()를 사용한다. <br>
 `.getImage();`
