@@ -238,8 +238,12 @@ print p
 |`relative`|요소 **자신**을 기준으로 배치| |
 |`absolute`|위치 상 **부모 요소**를 기준으로 배치| |
 |`fixed`|**브라우저 창**을 기준으로 배치| |
+
 <hr>
-#### Q) 컨텐츠는 좌측 정렬하고 헤더는 중앙 정렬하고 싶을 땐?
+
+#### Q) <br>
+컨텐츠는 좌측 정렬 <br>헤더는 중앙 정렬하고 싶을 땐?
+
 ```
 |<center>값</center>|<center>의미</center>|<center>기본값</center>|
 |---|---|---|
@@ -248,6 +252,7 @@ print p
 |`absolute`|위치 상 **부모 요소**를 기준으로 배치| |
 |`fixed`|브라우저 창을 기준으로 배치| |
 ```
+
 |<center>값</center>|<center>의미</center>|<center>기본값</center>|
 |---|---|---|
 |`static`|유형(기준) 없음 / 배치 불가능|`static`|
