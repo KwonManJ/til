@@ -141,15 +141,15 @@ __double underscores__ <br>
 링크와 비슷하지만 앞에 `!`가 붙는다. <br>
 상대 참조 URL을 사용할 수 있다. <br>
 ```
-![다이나믹 비트](./introBackground.jpg "다이나믹 비트 로고 입니다.")
+![다이나믹 비트](images/introBackground.jpg "다이나믹 비트 로고 입니다.")
 ```
-![다이나믹 비트](./introBackground.jpg "다이나믹 비트 타이틀 이미지 입니다.")
+![다이나믹 비트](images/introBackground.jpg "다이나믹 비트 타이틀 이미지 입니다.")
 
 `이미지에 링크도 걸 수 있다.`
 ```
-[![다이나믹 비트](./introBackground.jpg)](https://github.com/nosf6842 "개발자 사이트로 이동합니다.")
+[![다이나믹 비트](images/introBackground.jpg)](https://github.com/nosf6842 "개발자 사이트로 이동합니다.")
 ```
-[![다이나믹 비트](./introBackground.jpg)](https://github.com/nosf6842 "개발자 사이트로 이동합니다.")
+[![다이나믹 비트](images/introBackground.jpg)](https://github.com/nosf6842 "개발자 사이트로 이동합니다.")
 
 ## 1.6 코드(Code) 강조
 `<pre>`, `<code>` 로 변환된다. <br>

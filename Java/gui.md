@@ -1,5 +1,20 @@
 # java - GUI
+
 ### # 01 drawImage(); 사용법
+화면에 이미지를 그리기 위해서는 다음과 같은 과정이 필요하다.
+
+  1. 화면에 구현하고 싶은 이미지가 필요
+  2. 원하는 화면 사이즈 만큼의 이미지 객체 생성
+  3. 생성된 이미지 객체를 그래픽 객체로 연결
+
+자바에서 그림이 그려지는 과정은 **이미지 객체** 위에서 일어나는 것이 아니라 **그래픽 객체** 위에서 일어나기 때문에 반드시 화면 사이즈 만큼의 이미지 객체와 그래픽 객체를 연결시키는 과정이 필요하다.
+
+아래의 메소드와 생성자를 통한 고찰은 이러하다.
+
+ 1. Graphics 객체 위에 drawImage() 하기 위해서 drawImage() 메소드의 파라미터인 Image 객체가 필요하다.
+ 2. 내가 화면에 구현하고 싶은 이미지를 객체로 등록하기 위해서 URL 추적이 가능한 ImageIcon 생성자를 활용한다.
+ 3. 마지막으로 ImageIcon 클래스에서 제공하는 getImage() 메소드를 사용하여 ImageIcon에서 Image로 데이터 타입을 변환한다.
+
 ## 1. drawImage();
 > Class : Object > Graphics <br>
 > Abstract Method : drawImage(Image, int, int, ImageObserver) <br>
@@ -7,7 +22,7 @@
 
 ## 2. ImageIcon() {}
 > Class : Object > ImageIcon <br>
-> Constructor : ImageIcon(URL) <br>
+> Constructor : ImageIcon(URL)
 
 ## 3. getImage();
 > Class : Object > ImageIcon <br>
@@ -51,7 +66,7 @@ A) 게임 캐릭터 이미지를 구현할 때 이미지를 움직이게 하고 
 
 아래는 이를 그림으로 표현한 것이다.
 
-![더블 버퍼링.jpg](./double_buffering.jpg "더블 버퍼링이란?")
+![더블 버퍼링.jpg](images/double_buffering.jpg "더블 버퍼링이란?")
 
 Q) 어떻게 사용하는가?
 
@@ -100,3 +115,40 @@ public void update(Graphics g) {
 3. 그래픽에 원하는 이미지 객체를 그린다.
 4. 실제 화면으로 오프 스크린에 그려진 이미지를 옮긴다.
 5. update(g) >> paint(g) : infinity roof
+
+### # 03 커스텀 버튼 등록하기
+화면에 내가 원하는 이미지의 버튼을 등록하기 위해서는 다음과 같은 과정이 필요하다.
+
+  1. ImageIcon 객체에 이미지 등록
+  2. JButton 객체에 ImageIcon 등록
+  3. 버튼에 대한 기본 설정 제거
+  4. 마우스 이벤트 구현
+
+```Java
+private ImageIcon startButtonIn = new ImageIcon(Main.class.getResource("../images/startButtonIn"));
+private ImageIcon startButtonOut = new ImageIcon(Main.class.getResource("../images/startButtonOut"));
+
+private JButton startButton = new JButton(startButtonOut);
+
+startButton.setBounds(820, 450, 400, 100);
+startButton.setBorderPainted(false);
+startButton.setContentAreaFilled(false);
+startButton.setFocusPainted(false);
+startButton.addMouseListener(new MouseAdapter() {
+  @Override
+  public void mouseEntered(MouseEvent e) {
+  	startButton.setIcon(startButtonEnteredImage);
+  	startButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
+  }
+  @Override
+  public void mouseExited(MouseEvent e) {
+  	startButton.setIcon(startButtonBasicImage);
+  	startButton.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+  }
+  @Override
+  public void mousePressed(MouseEvent e) {
+  	// 시작 이벤트 구현
+  }
+});
+add(startButton);
+```
