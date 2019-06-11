@@ -18,14 +18,14 @@
  -
 
 ### Java
- - [Graphic User Interface based programming](./java/gui.md)
+ - [Graphic User Interface based programming](Java/gui.md)
 
 ### Android
- - [What is a manifests?](./android/manifests.md)
- - [Life Cycle of Activity](./android/Activity_Life_Cycle.md)
+ - [What is a manifests?](Android/manifests.md)
+ - [Life Cycle of Activity](Android/Activity_Life_Cycle.md)
 
 ### Algorithm
  -
 
 ### .md
- - [마크다운 사용법정리](./markdown/how_to_use_markdown.md)
+ - [마크다운 사용법정리](markdown/how_to_use_markdown.md)
