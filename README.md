@@ -6,7 +6,7 @@
 - 매일 최소 하나 이상의 토픽을 가지고 공부하고 정리하여 커밋
 - 매일 최소 하나 이상의 알고리즘 문제 해결
 
-*6 TILs and counting...*
+*7 TILs and counting...*
 <hr>
 
 ### HTML
@@ -28,7 +28,7 @@
  - [안드로이드 인트로 화면 구현하기](Android/intro.md)
 
 ### Algorithm
- -
+ - [백준 알고리즘 입/출력 받아보기](Algorithm/input_output.md)
 
 ### .md
  - [마크다운 사용법정리](markdown/how_to_use_markdown.md)
