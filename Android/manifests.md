@@ -59,7 +59,9 @@ Intro 라는 액티비티를 새롭게 생성하면 매니페스트에 자동으
         android:theme="@style/AppTheme">
 </application>
 ```
+
 앱의 선언 부분이다. 이는 앱의 컴포넌트에 영향을 줄 수 있는 속성들을 가지고 있다.
+
 |속성|기능|
 |---|---|
 |android:allowBackup|백업 및 복구 기능의 사용 여부를 표시한다.|
