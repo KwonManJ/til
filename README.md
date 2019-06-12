@@ -6,7 +6,7 @@
 - 매일 최소 하나 이상의 토픽을 가지고 공부하고 정리하여 커밋
 - 매일 최소 하나 이상의 알고리즘 문제 해결
 
-*7 TILs and counting...*
+*8 TILs and counting...*
 <hr>
 
 ### HTML
