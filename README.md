@@ -26,6 +26,7 @@
  - [안드로이드 액티비티 생명주기](Android/Activity_Life_Cycle.md)
  - [안드로이드 액션바 감추기](Android/hide-action-bar.md)
  - [안드로이드 인트로 화면 구현하기](Android/intro.md)
+ - [안드로이드 프리뷰에서 액션바 on/off 설정하기](Android/preview.md)
 
 ### Algorithm
  - [백준 알고리즘 입/출력 받아보기](Algorithm/input_output.md)
