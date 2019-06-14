@@ -10,6 +10,8 @@
 |02|1000|A＋B|
 |03|1001|A－B|
 |04|7287|등록|
+|05|10172|개|
+|06|10718|We love kriii|
 
 <hr>
 
@@ -114,6 +116,67 @@ public class Main {
 	}
 
 }
+```
+
+<hr>
+
+#### 개
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|아래 예제와 같이 개를 출력하시오.|없음|개를 출력한다.|
+
+```java
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 아래 예제와 같이 개를 출력하시오.
+
+		/*
+		|\_/|
+		|q p|   /}
+		( 0 )"""\
+		|"^"`    |
+		||_/=\\__|
+		*/
+
+		/*
+		\와 같은 텍스트는 기능을 가진 텍스트기 때문에 한 번만 사용하면 출력되지 않는다.
+		\ 를 출력하기 위해서는 \\ 이런식으로 두 번 사용해야 한다.
+		마찬가지로 " 를 출력하기 위해서도 \" 와 같은 방식을 사용해야 한다.
+		*/
+		System.out.println("|\\_/|");
+		System.out.println("|q p|   /}");
+		System.out.println("( 0 )\"\"\"\\");
+		System.out.println("|\"^\"`    |");
+		System.out.println("||_/=\\\\__|");
+
+	}
+
+}
+```
+
+<hr>
+
+#### We love kriii
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|ACM-ICPC 인터넷 예선, Regional, 그리고 World Finals까지 이미 2회씩 진출해버린 kriii는 미련을 버리지 못하고 왠지 모르게 올 해에도 파주 World Finals 준비 캠프에 참여했다. <br><br> 대회를 뜰 줄 모르는 지박령 kriii를 위해서 격려의 문구를 출력해주자.|본 문제는 입력이 없다.|두 줄에 걸쳐 "강한친구 대한육군"을 한 줄에 한 번씩 출력한다.|
+
+```java
+public class C06 {
+
+	public static void main(String[] args) {
+		// TODO ACM-ICPC 인터넷 예선, Regional, 그리고 World Finals까지 이미 2회씩 진출해버린 kriii는
+		// 미련을 버리지 못하고 왠지 모르게 올 해에도 파주 World Finals 준비 캠프에 참여했다.
+
+		// 대회를 뜰 줄 모르는 지박령 kriii를 위해서 격려의 문구를 출력해주자.
+
+		System.out.println("강한친구 대한육군");
+		System.out.println("강한친구 대한육군");
+	}
+
+}
+
 ```
 
 <hr>
