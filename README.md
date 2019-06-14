@@ -19,7 +19,8 @@
  -
 
 ### Java
- - [GUI 기반의 프로그래밍](Java/gui.md)
+ - [Java GUI 기반의 프로그래밍](Java/gui.md)
+ - [Java Scanner 사용법](Java/scanner.md)
 
 ### Android
  - [안드로이드 매니페스트란 무엇인가?](Android/manifests.md)
