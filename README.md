@@ -6,7 +6,7 @@
 - 매일 최소 하나 이상의 토픽을 가지고 공부하고 정리하여 커밋
 - 매일 최소 하나 이상의 알고리즘 문제 해결
 
-*14 TILs and counting...*
+*15 TILs and counting...*
 
 <hr>
 
@@ -17,7 +17,7 @@
  -
 
 ### Git
- -
+ - [Git 기초 사용법 정리](Git/how_to_use_git.md)
 
 ### Java
  - [Java GUI 기반의 프로그래밍](Java/gui.md)
