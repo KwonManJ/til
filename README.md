@@ -6,7 +6,7 @@
 - 매일 최소 하나 이상의 토픽을 가지고 공부하고 정리하여 커밋
 - 매일 최소 하나 이상의 알고리즘 문제 해결
 
-*13 TILs and counting...*
+*14 TILs and counting...*
 
 <hr>
 
@@ -22,6 +22,7 @@
 ### Java
  - [Java GUI 기반의 프로그래밍](Java/gui.md)
  - [Java Scanner 사용법](Java/scanner.md)
+ - [Java String 메소드 정리](Java/string.md)
 
 ### Android
  - [안드로이드 매니페스트란 무엇인가?](Android/manifests.md)
