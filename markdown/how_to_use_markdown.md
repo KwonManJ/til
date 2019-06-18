@@ -340,7 +340,14 @@ C~6~H~12~O~6~ ^포^도~당~
 <sub>도</sub>레<sup>미</sup>레<sub>도</sub>
 ```
 
-^윗^첨자 ~아래~첨자
-C~6~H~12~O~6~ ^포^도~당~
-~sub~String^sup^
+<sup>윗</sup>첨자 <sub>아래</sub>첨자 <br>
+C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> <sup>포</sup>도<sub>당</sub> <br>
+<sub>sub</sub>String<sup>sup</sup> <br>
+<sub>도</sub>레<sup>미</sup>레<sub>도</sub>
+
+위와 같이 출력되는 것이 정상인데 github에서는 `~`, `^`가 호환이 되지 않아서 아래와 같이 출력된다.
+
+^윗^첨자 ~아래~첨자 <br>
+C~6~H~12~O~6~ ^포^도~당~ <br>
+~sub~String^sup^ <br>
 <sub>도</sub>레<sup>미</sup>레<sub>도</sub>
