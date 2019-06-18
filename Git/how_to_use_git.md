@@ -7,12 +7,12 @@
 [git 공식 홈페이지](https://git-scm.com)에 들어가서 운영체제 맞게 다운로드 받는다.
 
 - 윈도우
- - [32-bit Git for Windows Setup](https://github.com/git-for-windows/git/releases/download/v2.22.0.windows.1/Git-2.22.0-32-bit.exe)
- - [64-bit Git for Windows Setup](https://github.com/git-for-windows/git/releases/download/v2.22.0.windows.1/Git-2.22.0-64-bit.exe)
+  - [32-bit Git for Windows Setup](https://github.com/git-for-windows/git/releases/download/v2.22.0.windows.1/Git-2.22.0-32-bit.exe)
+  - [64-bit Git for Windows Setup](https://github.com/git-for-windows/git/releases/download/v2.22.0.windows.1/Git-2.22.0-64-bit.exe)
 - 맥
- - [Mac OS X](https://git-scm.com/download/mac)
+  - [Mac OS X](https://git-scm.com/download/mac)
 - 리눅스/유닉스
- - [download for Linux and Unix](https://git-scm.com/download/linux)
+  - [download for Linux and Unix](https://git-scm.com/download/linux)
 
 ### 2. Git 사용법
 
@@ -59,16 +59,16 @@ host=github.com
 
 #### 2-3. Git Commit & Push
 - *git status*
- - `git status` : 프로젝트 디렉토리의 상태를 확인한다.
+  - `git status` : 프로젝트 디렉토리의 상태를 확인한다.
 - *git add*
- - `git add FILE_NAME` : 추적되지 않고있는 파일이나 변경된 파일을 **stage**에 올린다.
- - `git add .` : 현재 디렉토리의 변경사항들을 **stage**에 올린다.
- - `git add --all` : 관리되고 있는 디렉토리의 변경사항 전부를 **stage**에 올린다.
+  - `git add FILE_NAME` : 추적되지 않고있는 파일이나 변경된 파일을 **stage**에 올린다.
+  - `git add .` : 현재 디렉토리의 변경사항들을 **stage**에 올린다.
+  - `git add --all` : 관리되고 있는 디렉토리의 변경사항 전부를 **stage**에 올린다.
 - *git commit*
- - `git commit -m "COMMIT MESSAGE"` : commit(버전 기록), `" "`안에 변경사항 즉, 버전에 대한 기록을 작성
+  - `git commit -m "COMMIT MESSAGE"` : commit(버전 기록), `" "`안에 변경사항 즉, 버전에 대한 기록을 작성
 - *git push*
- - `git push -upstream origin master` : 최초로 원격저장소에 commit을 업로드
- - `git push -u origin master` : 위와 동일(축약 명령어) **사실, 이것을 더 많이 사용한다.**
+  - `git push -upstream origin master` : 최초로 원격저장소에 commit을 업로드
+  - `git push -u origin master` : 위와 동일(축약 명령어) **사실, 이것을 더 많이 사용한다.**
     - *이 명령어를 사용한 이후에는* `git push`만 입력해도 동작한다.
     - 이는 `git clone`을 한 경우에도 해당된다.
     - 특정 작업환경에서 최초 push인 경우, 로그인 창이 뜬다.
