@@ -6,7 +6,7 @@
 - 매일 최소 하나 이상의 토픽을 가지고 공부하고 정리하여 커밋
 - 매일 최소 하나 이상의 알고리즘 문제 해결
 
-*15 TILs and counting...*
+*16 TILs and counting...*
 
 <hr>
 
@@ -23,7 +23,7 @@
  - [Java GUI 기반의 프로그래밍](Java/gui.md)
  - [Java Scanner 사용법](Java/scanner.md)
  - [Java String 메소드 정리](Java/string.md)
-
+ - [Java mp3 파일 재생하기](Java/music.md)
 ### Android
  - [안드로이드 매니페스트란 무엇인가?](Android/manifests.md)
  - [안드로이드 액티비티 생명주기](Android/Activity_Life_Cycle.md)

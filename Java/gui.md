@@ -123,6 +123,7 @@ public void update(Graphics g) {
   2. JButton 객체에 ImageIcon 등록
   3. 버튼에 대한 기본 설정 제거
   4. 마우스 이벤트 구현
+  5. 등록된 버튼을 화면에 그리기
 
 ```Java
 private ImageIcon startButtonIn = new ImageIcon(Main.class.getResource("../images/startButtonIn"));
@@ -151,4 +152,16 @@ startButton.addMouseListener(new MouseAdapter() {
   }
 });
 add(startButton);
+
+public void paint(Graphics g) {
+  screenImage = createImage(Main.SCREEN_WIDTH, Main.SCREEN_HEIGHT);
+  screenGraphic = screenImage.getGraphics();
+  screnDraw(screenGraphic);
+  g.drawImage(screenImage, 0, 0, null);
+}
+
+public void screenDraw(Graphics g) {
+  paintComponents(g);
+  this.repaint();
+}
 ```
