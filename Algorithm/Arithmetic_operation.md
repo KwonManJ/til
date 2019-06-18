@@ -8,6 +8,7 @@
 |---|---|---|
 |01|10998|A × B|
 |02|1008|A / B|
+|03|10869|사칙연산|
 
 <hr>
 
@@ -75,6 +76,43 @@ public class Main {
 		// 결과 값 출력
 		System.out.printf("%.9f", A/B);
 
+	}
+
+}
+```
+
+<hr>
+
+#### 사칙연산
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|두 자연수 A와 B가 주어진다. 이 때, A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램을 작성하시오.|두 자연수 A와 B가 주어진다. (1<=A, B<=10,000)|첫째줄에 A+B, 둘째줄에 A-B, 셋째줄에 A*B, 넷째줄에 A/B, 다섯째줄에 A%B를 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 두 자연수 A와 B가 주어진다. 이 때, A+B, A-B, A*B, A/B(몫), A%B(나머지)를 출력하는 프로그램을 작성하시오.
+
+		// 입력값을 저장할 변수 선언
+		int A, B;
+
+		// 사용자로부터 입력값을 받을 수 있게 Scanner 객체 생성
+		Scanner input = new Scanner(System.in);
+
+		// 사용자의 입력을 int값으로 받는다.
+		A = input.nextInt();
+		B = input.nextInt();
+
+		// 결과 값 출력
+		System.out.println(A+B);
+		System.out.println(A-B);
+		System.out.println(A*B);
+		System.out.println(A/B);
+		System.out.println(A%B);
 	}
 
 }

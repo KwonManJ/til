@@ -39,4 +39,4 @@
  - [백준 알고리즘 사칙연산 도전하기](Algorithm/Arithmetic_operation.md)
 
 ### .md
- - [마크다운 사용법정리](markdown/how_to_use_markdown.md)
+ - [마크다운 사용법 정리](markdown/how_to_use_markdown.md)
