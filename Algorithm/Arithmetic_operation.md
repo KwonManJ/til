@@ -10,6 +10,7 @@
 |02|1008|A / B|
 |03|10869|사칙연산|
 |04|10430|나머지|
+|05|2558|A+B - 2|
 
 <hr>
 
@@ -158,4 +159,33 @@ public class Main {
 
 }
 
+```
+
+<hr>
+
+#### A+B - 2
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.|첫째 줄에 A, 둘째 줄에 B가 주어진다. (0<A, B<10)|첫째 줄에 A+B를 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+
+		Scanner scan = new Scanner(System.in);
+
+		int a, b;
+
+		a = scan.nextInt();
+		b = scan.nextInt();
+
+		System.out.println(a+b);
+	}
+
+}
 ```
