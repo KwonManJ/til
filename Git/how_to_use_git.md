@@ -72,6 +72,10 @@ host=github.com
     - *이 명령어를 사용한 이후에는* `git push`만 입력해도 동작한다.
     - 이는 `git clone`을 한 경우에도 해당된다.
     - 특정 작업환경에서 최초 push인 경우, 로그인 창이 뜬다.
+  - `git push --tags` : 로컬에 존재하는 모든 tag를 원격 저장소에 올린다.
+- *git tag*
+  - `git tag` : 현재 tag 리스트를 확인한다.
+  - `git tag -d TAG_NAME` : 특정 이름의 tag를 삭제한다.
 
 #### 2-4. Git Pull & Git Fetch
 `git fetch` : 원격 저장소의 변경사항들을 나의 디렉토리에 가져오는 것 <br>
