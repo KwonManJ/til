@@ -6,7 +6,7 @@
 - 매일 최소 하나 이상의 토픽을 가지고 공부하고 정리하여 커밋
 - 매일 최소 하나 이상의 알고리즘 문제 해결
 
-*16 TILs and counting...*
+*17 TILs and counting...*
 
 <hr>
 
@@ -24,6 +24,7 @@
  - [Java Scanner 사용법](Java/scanner.md)
  - [Java String 메소드 정리](Java/string.md)
  - [Java mp3 파일 재생하기](Java/music.md)
+
 ### Android
  - [안드로이드 매니페스트란 무엇인가?](Android/manifests.md)
  - [안드로이드 액티비티 생명주기](Android/Activity_Life_Cycle.md)
@@ -34,6 +35,7 @@
  - [안드로이드 R.java란 무엇인가?](Android/R_java.md)
  - [안드로이드 컴포넌트 메소드 구현하기](Android/use_components.md)
  - [안드로이드 ListView 기본 사용법](Android/listview.md)
+ - [안드로이드 SharedPreference 기본 사용법](Android/sharedpreferences.md)
 
 ### Algorithm
  - [백준 알고리즘 입/출력 받아보기](Algorithm/input_output.md)

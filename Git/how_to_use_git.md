@@ -66,6 +66,8 @@ host=github.com
   - `git add --all` : 관리되고 있는 디렉토리의 변경사항 전부를 **stage**에 올린다.
 - *git commit*
   - `git commit -m "COMMIT MESSAGE"` : commit(버전 기록), `" "`안에 변경사항 즉, 버전에 대한 기록을 작성
+  - `git commit -am` : **a**dd(modified) + commit **m**essage 를 동시에 사용 (최초 생성된 파일에 대해서는 적용되지 않는다.)
+  - `git commit --amend` : 제일 최신 commit을 **수정**하는 명령
 - *git push*
   - `git push -upstream origin master` : 최초로 원격저장소에 commit을 업로드
   - `git push -u origin master` : 위와 동일(축약 명령어) **사실, 이것을 더 많이 사용한다.**
