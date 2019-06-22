@@ -40,6 +40,7 @@
 ### Algorithm
  - [백준 알고리즘 입/출력 받아보기](Algorithm/input_output.md)
  - [백준 알고리즘 사칙연산 도전하기](Algorithm/Arithmetic_operation.md)
+ - [백준 알고리즘 for문 사용해보기](Algorithm/for_loop.md)
 
 ### .md
  - [마크다운 사용법 정리](markdown/how_to_use_markdown.md)
