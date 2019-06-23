@@ -9,6 +9,10 @@
 |01|2741|N 찍기|
 |02|2742|기찍 N|
 |03|2739|구구단|
+|04|2438|별 찍기 - 1|
+|05|2439|별 찍기 - 2|
+|06|2440|별 찍기 - 3|
+|07|2441|별 찍기 - 4|
 
 <hr>
 
@@ -94,4 +98,171 @@ public class Main {
 
 }
 
+```
+
+<hr>
+
+#### 별 찍기 - 1
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제|첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.|첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제
+
+		int N;
+
+		Scanner scan = new Scanner(System.in);
+		N = scan.nextInt();
+
+		// 전체루틴
+		for(int i=1; i<=N; i++) {
+
+			// 내부루틴
+			/*
+				전체 루틴에 따라 내부 루틴의 반복횟수가 달라지므로
+				전체 루틴의 영향을 받을 수 있게 로직을 작성한다.
+			*/
+			for(int j=1; j<=i; j++) {
+				System.out.print("*");
+			}
+
+			// 다음 전체루틴으로 넘어가기 전 개행
+			System.out.println("");
+		}
+
+	}
+
+}
+
+```
+
+<hr>
+
+#### 별 찍기 - 2
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제<br><br>하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.|첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.|첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO
+
+		/*
+		 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제
+
+		 하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.
+		 */
+
+		int N;
+
+		Scanner scan = new Scanner(System.in);
+		N = scan.nextInt();
+
+		for(int i=1; i<=N; i++) {
+
+			// 공백 생성
+			for(int k=N-i; k>0; k--) {
+				System.out.print(" ");
+			}
+
+			// 별 찍기
+			for(int j=1; j<=i; j++) {
+				System.out.print("*");
+			}
+
+			// 개행
+			System.out.println("");
+
+		}
+	}
+
+}
+```
+
+<hr>
+
+#### 별 찍기 - 3
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|첫째 줄에는 별 N개, 둘째 줄에는 별 N-1개, ..., N번째 줄에는 별 1개를 찍는 문제|첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.|첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 첫째 줄에는 별 N개, 둘째 줄에는 별 N-1개, ..., N번째 줄에는 별 1개를 찍는 문제
+
+		int i; // 전체루틴 변수
+
+		int N;
+
+		Scanner scan = new Scanner(System.in);
+		N = scan.nextInt();
+
+		for(i=N; i>0; i--) {
+			for(int j=i; j>0; j--) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+
+}
+```
+
+<hr>
+
+#### 별 찍기 - 4
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|첫째 줄에는 별 N개, 둘째 줄에는 별 N-1개, ..., N번째 줄에는 별 1개를 찍는 문제<br><br>하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.|첫째 줄에 N(1 ≤ N ≤ 100)이 주어진다.|첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		 첫째 줄에는 별 N개, 둘째 줄에는 별 N-1개, ..., N번째 줄에는 별 1개를 찍는 문제
+
+		 하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.
+		 */
+		int i; // 전체루틴 변수
+
+		int N;
+
+		Scanner scan = new Scanner(System.in);
+		N = scan.nextInt();
+
+		for(i=1; i<=N; i++) {
+			for(int j=0; j<i-1; j++) {
+				System.out.print(" ");
+			}
+			for(int k=N; k>i-1; k--) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
+	}
+
+}
 ```
