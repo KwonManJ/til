@@ -14,6 +14,10 @@
 |06|2440|별 찍기 - 3|
 |07|2441|별 찍기 - 4|
 |08|1924|2007년|
+|09|8393|합|
+|10|11720|숫자의 합|
+|11|11721|열 개씩 끊어 출력하기|
+|12|15552|빠른 A+B|
 
 <hr>
 
@@ -314,3 +318,204 @@ public class Main {
 ```
 
 <hr>
+
+#### 합
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.|첫째 줄에 n (1 ≤ n ≤ 10,000)이 주어진다.|1부터 n까지 합을 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
+
+		int n;
+
+		Scanner scan = new Scanner(System.in);
+		n = scan.nextInt();
+
+		int sum = 0;
+
+		for (int i = 1; i <= n; i++) {
+			sum += i;
+		}
+
+		System.out.println(sum);
+	}
+
+}
+```
+
+<hr>
+
+#### 숫자의 합
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출력하는 프로그램을 작성하시오.|첫째 줄에 숫자의 개수 N (1 ≤ N ≤ 100)이 주어진다. 둘째 줄에 숫자 N개가 공백없이 주어진다.|입력으로 주어진 숫자 N개의 합을 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출력하는 프로그램을 작성하시오.
+
+		/*
+		 첫째 줄에 숫자의 개수 N (1 ≤ N ≤ 100)이 주어진다.
+
+		 둘째 줄에 숫자 N개가 공백없이 주어진다.
+
+		 입력으로 주어진 숫자 N개의 합을 출력한다.
+		*/
+
+		int N;
+
+		Scanner scan = new Scanner(System.in);
+		N = scan.nextInt();
+
+		String temp = scan.next();
+
+		int sum=0;
+
+		for(int i=0; i<N; i++) {
+			// String >> Char >> int 변환이 핵심인 문제
+			sum += temp.charAt(i) - 48;
+		}
+
+		System.out.println(sum);
+	}
+
+}
+
+```
+
+<hr>
+
+#### 열 개씩 끊어 출력하기
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|알파벳 소문자와 대문자로만 이루어진 길이가 N인 단어가 주어진다. <br><br> 한 줄에 10글자씩 끊어서 출력하는 프로그램을 작성하시오.|첫째 줄에 단어가 주어진다. 단어는 알파벳 소문자와 대문자로만 이루어져 있으며, 길이는 100을 넘지 않는다. 길이가 0인 단어는 주어지지 않는다.|입력으로 주어진 단어를 열 개씩 끊어서 한 줄에 하나씩 출력한다. 단어의 길이가 10의 배수가 아닌 경우에는 마지막 줄에는 10개 미만의 글자만 출력할 수도 있다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO
+		// 알파벳 소문자와 대문자로만 이루어진 길이가 N인 단어가 주어진다.
+		// 한 줄에 10글자씩 끊어서 출력하는 프로그램을 작성하시오.
+
+		String N;
+
+		Scanner scan = new Scanner(System.in);
+		N = scan.next();
+
+		int sum = 0;
+
+		for (int i = 0; i < N.length(); i++) {
+
+			if(sum%10 == 0 && sum != 0) {
+				System.out.println(" ");
+			}
+
+			System.out.print(N.charAt(i));
+			sum ++;
+		}
+	}
+
+}
+
+```
+
+<hr>
+
+#### 빠른 A+B
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|주어진 테스트 케이스 개수 만큼 A, B 두 정수를 입력받아 A+B 를 출력한다.|첫 줄에 테스트케이스의 개수 T가 주어진다. T는 최대 1,000,000이다. 다음 T줄에는 각각 두 정수 A와 B가 주어진다. A와 B는 1 이상, 1,000 이하이다.|각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.|
+
+```java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 주어진 테스트 케이스 개수 만큼 A, B 두 정수를 입력받아 A+B 를 출력한다.
+
+		int T;
+
+		Scanner scan = new Scanner(System.in);
+		T = scan.nextInt();
+
+		ArrayList<Integer> storage = new ArrayList<>();
+
+		Integer A, B;
+
+		for(int i=0; i<T; i++) {
+			A = scan.nextInt();
+			B = scan.nextInt();
+
+			storage.add(A);
+			storage.add(B);
+		}
+
+		for(int i=0; i<T*2; i += 2) {
+			System.out.println(storage.get(i) + storage.get(i+1));
+		}
+
+	}
+
+}
+
+```
+
+> 이와 같은 방식으로 풀 수 있지만, 문제에서 **시간 제한을 1초**로 두고 있기 때문에 **더 빠른 처리 방식이 필요**하다.
+
+ - **Java**를 사용하고 있다면, `Scanner`와 `System.out.println` 대신 `BufferedReader`와 `BufferedWriter`를 사용할 수 있다.
+ - `BufferedWriter.flush`는 맨 마지막에 한 번만 하면 된다.
+ - `BufferedReader`와 `BufferedWriter`에 대해서는 [java 포스팅](../Java/bufferedreader_bufferedwriter.md)을 참조하자
+
+```java
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		// TODO 주어진 테스트 케이스 개수 만큼 A, B 두 정수를 입력받아 A+B 를 출력한다.
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+		int T = Integer.parseInt(br.readLine());
+
+		int a, b;
+
+		for (int i = 0; i < T; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			a = Integer.parseInt(st.nextToken());
+			b = Integer.parseInt(st.nextToken());
+
+			bw.write(a+b + "\n");
+		}
+
+		bw.flush();
+		bw.close();
+
+	}
+
+}
+```
