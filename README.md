@@ -6,7 +6,7 @@
 - 매일 최소 하나 이상의 토픽을 가지고 공부하고 정리하여 커밋
 - 매일 최소 하나 이상의 알고리즘 문제 해결
 
-*23 TILs and counting...*
+*24 TILs and counting...*
 
 <hr>
 
@@ -45,6 +45,7 @@
  - [백준 알고리즘 입/출력 받아보기](Algorithm/input_output.md)
  - [백준 알고리즘 사칙연산 도전하기](Algorithm/Arithmetic_operation.md)
  - [백준 알고리즘 for문 사용해보기](Algorithm/for_loop.md)
+ - [백준 알고리즘 if문 사용해보기](Algorithm/if.md)
 
 ### .md
  - [마크다운 사용법 정리](markdown/how_to_use_markdown.md)
