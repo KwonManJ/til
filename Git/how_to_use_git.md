@@ -82,3 +82,16 @@ host=github.com
 #### 2-4. Git Pull & Git Fetch
 `git fetch` : 원격 저장소의 변경사항들을 나의 디렉토리에 가져오는 것 <br>
 `git pull` : 원격 저장소의 변경사항들을 나의 디렉토리에 merge 하는 것
+
+#### 2-5. Git stash
+다른 브랜치로 checkout 해야하는데 아직 현재 브랜치에서의 작업이 끝나지 않은 경우(commit 하기 굉장히 애매한 경우)
+
+> 이러한 경우에 stash를 이용하면 작업중이던 파일을 임시로 저장해두고 현재 브랜치의 상태를 마지막 커밋의 상태로 초기화 할 수 있다.
+
+ - `git stash` : 현재 작업중이던 코드를 stash로 저장한다.
+ - `git stash list` : 남아있는 stash 상태를 보여준다.
+ - `git git stash apply` : stash로 숨겨두었던 코드들이 다시 살아난다.
+ - `git stash drop` : 가장 최신 stash를 삭제한다.
+ - `git stash pop` : `git stash apply` + `git stash drop`
+
+(주의) : git이 추적하고 있지 않은 파일은 stash가 되지 않는다.
