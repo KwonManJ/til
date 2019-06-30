@@ -8,6 +8,7 @@
 |---|---|---|
 |01|9498|시험 성적|
 |02|10817|세 수|
+|03|10871|X보다 작은 수|
 
 <hr>
 
@@ -56,7 +57,7 @@ public class Main {
 
 |<center>문제</center>|<center>입력</center>|<center>출력</center>|
 |---|---|---|
-|세 정수 A, B, C가 주어진다. 이때, 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오. |첫째 줄에 세 정수 A, B, C가 공백으로 구분되어 주어진다. (1 ≤ A, B, C ≤ 100)|두 번째로 큰 정수를 출력한다.|
+|세 정수 A, B, C가 주어진다. 이때, 두 번째로 큰 정수를 출력하는 프로그램을 작성하시오.|첫째 줄에 세 정수 A, B, C가 공백으로 구분되어 주어진다. (1 ≤ A, B, C ≤ 100)|두 번째로 큰 정수를 출력한다.|
 
 ```java
 import java.util.Scanner;
@@ -123,3 +124,40 @@ public class Main {
 ```
 
 <hr>
+
+#### X보다 작은 수
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|정수 N개로 이루어진 수열 A와 정수 X가 주어진다. 이때, A에서 X보다 작은 수를 모두 출력하는 프로그램을 작성하시오.|첫째 줄에 N과 X가 주어진다. (1 ≤ N, X ≤ 10,000) <br> <br> 둘째 줄에 수열 A를 이루는 정수 N개가 주어진다. 주어지는 정수는 모두 1보다 크거나 같고, 10,000보다 작거나 같은 정수이다.|X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한다. X보다 작은 수는 적어도 하나 존재한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 정수 N개로 이루어진 수열 A와 정수 X가 주어진다.
+		// 이때, A에서 X보다 작은 수를 모두 출력하는 프로그램을 작성하시오.
+
+		Scanner scan = new Scanner(System.in);
+
+		int N, X;
+		N = scan.nextInt();
+		X = scan.nextInt();
+
+		int[] array = new int[N];
+
+		for (int i = 0; i < N; i++) {
+			array[i] = scan.nextInt();
+		}
+
+		for (int i = 0; i < N; i++) {
+			if (array[i] < X) {
+				System.out.print(array[i] + " ");
+			}
+		}
+	}
+
+}
+```
