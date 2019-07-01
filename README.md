@@ -6,7 +6,7 @@
 - 매일 최소 하나 이상의 토픽을 가지고 공부하고 정리하여 커밋
 - 매일 최소 하나 이상의 알고리즘 문제 해결
 
-*24 TILs and counting...*
+*25 TILs and counting...*
 
 <hr>
 
@@ -22,11 +22,12 @@
 ### Java
  - [Java 자바란 무엇인가?](Java/about_java.md)
  - [Java 기초문법 정리](Java/grammar.md)
+ - [Java Scanner 사용법](Java/scanner.md)
  - [Java Scanner의 대체품 BufferedReader & BufferedWriter](Java/bufferedreader_bufferedwriter.md)
  - [Java GUI 기반의 프로그래밍](Java/gui.md)
- - [Java Scanner 사용법](Java/scanner.md)
  - [Java String 메소드 정리](Java/string.md)
  - [Java mp3 파일 재생하기](Java/music.md)
+ - [Java Arrays 클래스](Java/Arrays.md)
  - [Java ArrayList<> 활용법](Java/arraylist.md)
 
 ### Android
