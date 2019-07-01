@@ -10,6 +10,7 @@
 |02|10817|세 수|
 |03|10871|X보다 작은 수|
 |04|1546|평균|
+|05|4344|평균은 넘겠지|
 
 <hr>
 
@@ -35,9 +36,9 @@ public class Main {
 		나머지 점수는 F
 		*/
 
-		int score;
-
 		Scanner scan = new Scanner(System.in);
+
+		int score;
 		score = scan.nextInt();
 
 		if(score>=90) System.out.println("A");
@@ -202,6 +203,19 @@ public class Main {
 
 		Arrays.sort(array);
 
+		/*
+		if문을 사용하면 다음과 같다.
+
+		double M = 0;
+
+		for(int i=0; i<N; i++) {
+			if(array[i] > M) {
+				M = array[i];
+			}
+		}
+
+		*/
+
 		double M;
 		M = array[N - 1];
 
@@ -217,7 +231,73 @@ public class Main {
 		}
 
 		avg = sum/N;
-		System.out.print(avg);
+		System.out.printf("%.2f", avg);
+	}
+
+}
+```
+
+<hr>
+
+#### 평균은 넘겠지
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|대학생 새내기들의 90%는 자신이 반에서 평균은 넘는다고 생각한다. 당신은 그들에게 슬픈 진실을 알려줘야 한다.|첫째 줄에는 테스트 케이스의 개수 C가 주어진다. <br> <br> 둘째 줄부터 각 테스트 케이스마다 학생의 수 N(1 ≤ N ≤ 1000, N은 정수)이 첫 수로 주어지고, 이어서 N명의 점수가 주어진다. <br> <br> 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다.|각 케이스마다 한 줄씩 평균을 넘는 학생들의 비율을 반올림하여 소수점 셋째 자리까지 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 대학생 새내기들의 90%는 자신이 반에서 평균은 넘는다고 생각한다.
+		// 당신은 그들에게 슬픈 진실을 알려줘야 한다.
+
+		Scanner scan = new Scanner(System.in);
+
+		// 첫째 줄 테스트 케이스
+		int testCase;
+		testCase = scan.nextInt();
+
+		// 둘째 줄 학생의 수
+		int[] student = new int[testCase];
+
+		// 학생들의 점수와 평균을 저장할 배열
+		int[][] score = new int[testCase][1000];
+		double[] avg = new double[testCase];
+
+		// 테스트 케이스 만큼 입력받을 반복문
+		for (int i = 0; i < testCase; i++) {
+
+			int sum = 0;
+
+			// 둘째 줄 학생의 수
+			student[i] = scan.nextInt();
+
+			// 학생 수 만큼의 점수
+			for (int j = 0; j < student[i]; j++) {
+				score[i][j] = scan.nextInt();
+				sum += score[i][j];
+			}
+
+			avg[i] = (double) sum / student[i];
+		}
+
+		for (int i = 0; i < testCase; i++) {
+
+			int cnt = 0;
+
+			// 평균을 넘는 사람의 수 카운트
+			for(int j = 0; j < student[i]; j++) {
+				if(avg[i]<score[i][j]) {
+					cnt++;
+				}
+			}
+
+			System.out.printf("%.3f%%\n", (double)cnt/student[i]*100);
+		}
+
 	}
 
 }

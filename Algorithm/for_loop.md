@@ -91,10 +91,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO N을 입력받은 뒤, 구구단 N단을 출력하는 프로그램을 작성하시오. 출력 형식에 맞춰서 출력하면 된다.
 
-		int N;
-
 		Scanner scan = new Scanner(System.in);
-		N = scan.nextInt();
+		int N = scan.nextInt();
 
 		for(int i=1; i<10; i++) {
 			System.out.println(N + " * " + i + " = " + N*i);
@@ -121,10 +119,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO 첫째 줄에는 별 1개, 둘째 줄에는 별 2개, N번째 줄에는 별 N개를 찍는 문제
 
-		int N;
-
 		Scanner scan = new Scanner(System.in);
-		N = scan.nextInt();
+		int N = scan.nextInt();
 
 		// 전체루틴
 		for(int i=1; i<=N; i++) {
@@ -170,10 +166,8 @@ public class Main {
 		 하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.
 		 */
 
-		int N;
-
 		Scanner scan = new Scanner(System.in);
-		N = scan.nextInt();
+		int N = scan.nextInt();
 
 		for(int i=1; i<=N; i++) {
 
@@ -214,10 +208,8 @@ public class Main {
 
 		int i; // 전체루틴 변수
 
-		int N;
-
 		Scanner scan = new Scanner(System.in);
-		N = scan.nextInt();
+		int N = scan.nextInt();
 
 		for(i=N; i>0; i--) {
 			for(int j=i; j>0; j--) {
@@ -251,12 +243,11 @@ public class Main {
 
 		 하지만, 오른쪽을 기준으로 정렬한 별(예제 참고)을 출력하시오.
 		 */
+
 		int i; // 전체루틴 변수
 
-		int N;
-
 		Scanner scan = new Scanner(System.in);
-		N = scan.nextInt();
+		int N = scan.nextInt();
 
 		for(i=1; i<=N; i++) {
 			for(int j=0; j<i-1; j++) {
@@ -333,10 +324,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램을 작성하시오.
 
-		int n;
-
 		Scanner scan = new Scanner(System.in);
-		n = scan.nextInt();
+		int n = scan.nextInt();
 
 		int sum = 0;
 
@@ -374,10 +363,8 @@ public class Main {
 		 입력으로 주어진 숫자 N개의 합을 출력한다.
 		*/
 
-		int N;
-
 		Scanner scan = new Scanner(System.in);
-		N = scan.nextInt();
+		int N = scan.nextInt();
 
 		String temp = scan.next();
 
@@ -413,10 +400,8 @@ public class Main {
 		// 알파벳 소문자와 대문자로만 이루어진 길이가 N인 단어가 주어진다.
 		// 한 줄에 10글자씩 끊어서 출력하는 프로그램을 작성하시오.
 
-		String N;
-
 		Scanner scan = new Scanner(System.in);
-		N = scan.next();
+		String N = scan.next();
 
 		int sum = 0;
 
@@ -452,10 +437,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO 주어진 테스트 케이스 개수 만큼 A, B 두 정수를 입력받아 A+B 를 출력한다.
 
-		int T;
-
 		Scanner scan = new Scanner(System.in);
-		T = scan.nextInt();
+		int T = scan.nextInt();
 
 		ArrayList<Integer> storage = new ArrayList<>();
 
