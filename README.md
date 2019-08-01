@@ -27,7 +27,7 @@
  - [Java GUI 기반의 프로그래밍](Java/gui.md)
  - [Java KeyListener & KeyAdapter](Java/key.md)
  - [Java String 메소드 정리](Java/string.md)
-  - [Java Math 클래스 정리](Java/math.md)
+ - [Java Math 클래스 정리](Java/math.md)
  - [Java mp3 파일 재생하기](Java/music.md)
  - [Java Arrays 클래스](Java/Arrays.md)
  - [Java ArrayList<> 활용법](Java/arraylist.md)
