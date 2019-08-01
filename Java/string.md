@@ -213,7 +213,7 @@ contains : true
 ```java
 String str = "charAt";
 char charAt = str.charAt(2);
-System.out.println("charAt : charAt");
+System.out.println("charAt : " + charAt);
 
 콘솔 결과
 charAt : a
