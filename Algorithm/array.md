@@ -9,6 +9,8 @@
 |01|1152|단어의 개수|
 |02|2577|숫자의 개수|
 |03|8958|OX퀴즈|
+|04|2920|음계|
+|05|10039|평균 점수|
 
 <hr>
 
@@ -137,6 +139,8 @@ public class Main {
 |OX퀴즈의 결과가 주어졌을 때, 점수를 구하는 프로그램을 작성하시오.|첫째 줄에 테스트 케이스의 개수가 주어진다. 각 테스트 케이스는 한 줄로 이루어져 있고, 길이가 0보다 크고 80보다 작은 문자열이 주어진다. 문자열은 O와 X만으로 이루어져 있다.|각 테스트 케이스마다 점수를 출력한다.|
 
 ```java
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -154,9 +158,175 @@ public class Main {
 
 		*/
 
+		Scanner scan = new Scanner(System.in);
 
+		int testCase;
+		testCase = scan.nextInt();
+
+		String[] OX = new String[testCase];
+
+		for(int i = 0; i<testCase; i++) {
+			OX[i] = scan.next();
+		}
+
+		// 각 케이스의 점수를 저장할 배열
+		int[] sumOfScore = new int[testCase];
+
+		// 각 케이스의 OX를 판단할 변수
+		char judge;
+
+		for(int i=0; i<testCase; i++) {
+
+			int score = 0;
+			int sum = 0;
+
+			for(int j=0; j<OX[i].length(); j++) {
+
+				judge = OX[i].charAt(j);
+
+				if(judge == 'O') {
+					score++;
+				} else {
+					score = 0;
+				}
+
+				sum = sum + score;
+			}
+
+			sumOfScore[i] = sum;
+		}
+
+		for(int i=0; i<testCase; i++) {
+			System.out.println(sumOfScore[i]);
+		}
+
+		//
+		scan.close();
 	}
 
 }
+```
 
+<hr>
+
+#### 음계
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|연주한 순서가 주어졌을 때, 이것이 ascending인지, descending인지, 아니면 mixed인지 판별하는 프로그램을 작성하시오.|첫째 줄에 8개 숫자가 주어진다. 이 숫자는 문제 설명에서 설명한 음이며, 1부터 8까지 숫자가 한 번씩 등장한다.|첫째 줄에 ascending, descending, mixed 중 하나를 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 연주한 순서가 주어졌을 때, 이것이 ascending인지, descending인지, 아니면 mixed인지 판별하는 프로그램을 작성하시오.
+
+		/*
+
+		다장조는 c d e f g a b C, 총 8개 음으로 이루어져있다. 이 문제에서 8개 음은 다음과 같이 숫자로 바꾸어 표현한다.
+
+		c는 1로, d는 2로, ..., C를 8로 바꾼다.
+
+		1부터 8까지 차례대로 연주한다면 ascending,
+
+		8부터 1까지 차례대로 연주한다면 descending,
+
+		둘 다 아니라면 mixed 이다.
+
+		*/
+
+		Scanner scan = new Scanner(System.in);
+
+		int[] scale = new int[8];
+
+		for(int i = 0; i < 8; i++) {
+			scale[i] = scan.nextInt();
+		}
+
+		String[] judge = new String[7];
+
+		for(int i = 1; i < 8; i++) {
+			if(scale[i]>scale[i-1]) {
+				judge[i-1] = "asc";
+			} else {
+				judge[i-1] = "dec";
+			}
+		}
+
+		for(int i = 1; i < 7; i++) {
+			if(judge[i] != judge[i-1]) {
+				System.out.println("mixed");
+				break;
+			} else if (judge[i] == "asc") {
+				if(i == 6) {
+					System.out.println("ascending");
+				}
+				continue;
+			} else {
+				if(i == 6) {
+					System.out.println("descending");
+				}
+				continue;
+			}
+		}
+	}
+
+}
+```
+
+<hr>
+
+#### 평균 점수
+
+|<center>문제</center>|<center>입력</center>|<center>출력</center>|
+|---|---|---|
+|학생 5명의 점수가 주어졌을 때, 평균 점수를 구하는 프로그램을 작성하시오.|입력은 총 5줄로 이루어져 있고, 원섭이의 점수, 세희의 점수, 상근이의 점수, 숭이의 점수, 강수의 점수가 순서대로 주어진다.<br><br>점수는 모두 0점 이상, 100점 이하인 5의 배수이다. 따라서, 평균 점수는 항상 정수이다.|첫째 줄에 학생 5명의 평균 점수를 출력한다.|
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 학생 5명의 점수가 주어졌을 때, 평균 점수를 구하는 프로그램을 작성하시오.
+
+		/*
+
+		상현이가 가르치는 아이폰 앱 개발 수업의 수강생은 원섭, 세희, 상근, 숭, 강수이다.
+
+		어제 이 수업의 기말고사가 있었고, 상현이는 지금 학생들의 기말고사 시험지를 채점하고 있다.
+
+		기말고사 점수가 40점 이상인 학생들은 그 점수 그대로 자신의 성적이 된다.
+
+		하지만, 40점 미만인 학생들은 보충학습을 듣는 조건을 수락하면 40점을 받게 된다.
+
+		보충학습은 거부할 수 없기 때문에, 40점 미만인 학생들은 항상 40점을 받게 된다.
+
+		*/
+
+		Scanner scan = new Scanner(System.in);
+
+		int[] score = new int[5];
+
+		for(int i = 0; i < score.length; i++) {
+			score[i] = scan.nextInt();
+		}
+
+		int sum = 0;
+
+		for(int i = 0; i < score.length; i++) {
+			if(score[i] < 40) {
+				score[i] = 40;
+			}
+
+			sum += score[i];
+		}
+
+		int avg = sum/5;
+		System.out.println(avg);
+	}
+
+}
 ```
