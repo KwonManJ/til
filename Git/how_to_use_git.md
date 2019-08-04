@@ -95,3 +95,82 @@ host=github.com
  - `git stash pop` : `git stash apply` + `git stash drop`
 
 (주의) : git이 추적하고 있지 않은 파일은 stash가 되지 않는다.
+
+### 3. 추적에서의 제외
+
+> .gitignore 파일을 통해 무시목록 설정
+
+Git 시스템을 사용하여 여러명이서 팀 작업을 진행하다보면 팀 내에서 공유되지 않기를 원하는 파일이 생길 때가 있다.
+
+가장 대표적인 예로 `.classpath`와 `.project` 파일이다. 이 두 파일은 현재 내가 사용하는 PC를 기반으로 하여 각종 `참조 경로`들을 담고 있는 파일이기 때문에 오히려 프로젝트 진행시에 방해가 될 뿐이다.
+
+`.gitignore` 파일은 Git에 소스를 올릴 때 특정 파일이름의 패턴이 업로드 되지 않도록 설정하는 파일이다.
+
+#### 일반적으로 사용되는 제외 목록
+
+1. 실행파일
+
+```
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+```
+
+2. 문서
+
+```
+*.pptx
+*.docx
+*.ppt
+*.xls
+*.xlsx
+*.pdf
+```
+
+3. 패키지 파일
+
+```
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+*.jar
+```
+
+4. 로그 파일
+
+```
+*.log
+```
+
+5. 이클립스용 설정 파일
+
+```
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.externalToolBuilders/
+*.launch
+.classpath
+.factorypath
+.buildpath
+.target
+.tern-project
+.springBeans
+.recommenders/
+```
