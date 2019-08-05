@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// 10951번
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Main {
 
 			System.out.println(iNum1 + iNum2);
 		}
-    
+
 	}
 
 }

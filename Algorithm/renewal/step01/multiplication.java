@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// 2588번
 public class Main {
 
 	public static void main(String[] args) {

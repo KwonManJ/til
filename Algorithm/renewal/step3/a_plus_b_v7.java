@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// 11021번
 public class Main {
 
 	public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class Main {
 
 			System.out.println("Case #" + (count++) + ": " + (numBox[i]+numBox[i+1]));
 		}
-    
+
 	}
 
 }

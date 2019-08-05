@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// 1330번
 public class Main {
 
 	public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class Main {
 		} else {
 			System.out.println("==");
 		}
-		
+
 	}
 
 }

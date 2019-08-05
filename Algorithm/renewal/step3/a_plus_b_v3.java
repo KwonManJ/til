@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// 10950번
 public class Main {
 
 	public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class Main {
 		for(int i = 0; i < testCase*2; i += 2) {
 			System.out.println(numBox[i]+numBox[i+1]);
 		}
-    
+
 	}
 
 }
